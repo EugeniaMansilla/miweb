@@ -1,0 +1,138 @@
+body{
+    --celeste: rgb(3, 81, 250);
+    --gris: rgb(209, 208, 216);
+    background-color: var(--gris) ;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#grid-layout-contenedor {
+    display: grid;
+    grid-template-areas: 'logo'
+                        'cuerpo';
+    grid-template-rows: 5vw 70vw;
+    height: 110vw;
+ 
+}
+#caja1 {
+    grid-area: logo;
+    background-color: var(--celeste);
+    padding: 0.5vw 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#caja2 {
+    grid-area: cuerpo
+}
+
+
+#grid-layout-cuerpo{
+    display: grid;
+    grid-template-areas: 'perfil perfil'
+                        'com stac';                       
+    grid-template-rows: 28% 38% ;
+    grid-template-columns: 65% 35%;
+    
+}
+#C1 {grid-area: perfil;
+    font-size: 1.25vw;
+}
+#C2 { 
+    grid-area: com;
+    font-size: 1vw; 
+    grid-row: 2/4;
+}
+#C3 {grid-area: stac;
+    font-size: 1.25vw;
+}   
+
+#grid-layout-perfil{
+    display: grid;
+    grid-template-areas: 'foto nombre seguir';
+    grid-template-rows: auto;
+    grid-template-columns: 25% auto 20%;
+}
+
+#n1 {grid-area: foto;}
+#n2 {grid-area: nombre;
+    line-height: 1.5vw;
+    margin: 1vw;
+
+}
+#n3 {grid-area: seguir;
+    padding: 2vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+   
+}
+
+.fondoContenedor{
+    margin: 3vw 4vw ;
+}
+
+.fondoCuerpo{
+    background-color:white;
+    border-radius: 1.5vw;
+    padding: 0.5vw 3vw;
+    margin: 1vw;
+}
+
+.logo{
+    height: 90%;
+    
+}
+.foto1 {
+    border-radius: 50%;
+    border: 0.5vw solid var(--celeste);
+    padding: 0.5vw;
+    margin: 1vw;
+    width: 80%;
+}
+.foto2 {
+    width: 100%;
+}
+.botonMegusta {
+    border: none;
+    padding: 0.5vw 1vw;; 
+    background-color: var(--gris); 
+    border-radius: 0.5vw; 
+    color: var(--celeste); 
+    width: 7vw;
+    font-size: 1vw;
+}
+.botonColor {
+    border: none;
+    padding: 0.5vw 1vw;
+    background-color: var(--celeste); 
+    border-radius: 0.5vw; 
+    width: 7vw;
+    font-size: 1vw;
+    color: white;
+}
+
+.CajaUsuario {
+    border: none;
+    padding: 0.5vw; 
+    background-color:rgb(157, 191, 224); 
+    border-radius: 0.5vw; 
+    width: 12vw;
+    font-size: 1vw;
+}
+.CajaComentario {
+    border: none;
+    padding: 0.5vw; 
+    background-color: var(--gris); 
+    border-radius: 0.5vw; 
+    width: 39vw;
+    font-size: 1vw;
+}
+#megusta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
